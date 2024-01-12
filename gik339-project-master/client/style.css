@@ -1,0 +1,82 @@
+/* stil */
+header {
+  background-color: #000000fe;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  
+}
+
+main {
+
+padding-top: 1rem;
+background-color: rgb(192,192,192);
+-webkit-animation-name: animate1; 
+-webkit-animation-duration: 20s; 
+animation-name: animate1;
+animation-duration: 20s;
+}
+@keyframes animate1 {
+  0%   {background-color: rgb(251,207, 232);}
+  20%  {background-color: rgb(254, 240, 138);}
+  40%  {background-color: rgb(191, 219, 254);}
+  60% {background-color: rgb(187, 247, 208);}
+  80% {background-color: rgb(192,192,192);}
+  100% {background-color: rgb(147,112,219);}
+  
+}
+
+
+#userForm {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 430px;
+  margin: auto; /* Centrera formulär på sidan*/
+}
+
+/* labelstil */
+#userForm label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Formulärets input och select-stil*/
+#userForm input,
+#userForm select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* knappstil */
+#userForm button {
+  background-color:  #000000fe;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* knappstil: Rensa-knapp */
+#userForm button[type="reset"] {
+  background-color:  #000000fe;
+  margin-right: 8px;
+}
+
+/* Responsivt beteende för mindre skärmar*/
+@media (max-width: 600px) {
+  #userForm {
+    max-width: 90%;
+  }
+}
+
+
+ 

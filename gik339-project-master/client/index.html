@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./index.css"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Användarregistrering</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  
+  <body>
+    <header>
+      <h1 class="text-3xl">Player Bank - Football Edition</h1>
+    </header>
+    <main>
+      <div>
+        <form id="userForm">
+          <div>
+            <label for="firstName">Förnamn</label>
+            <input type="text" name="firstName" />
+          </div>
+          <div>
+            <label for="lastName">Efternamn</label>
+            <input type="text" name="lastName" />
+          </div>
+          <div>
+            <label for="position">Position</label>
+            <input type="text" name="position" />
+          </div>
+          <div>
+            <label for="weight">Vikt</label>
+            <input type="text" name="weight" />
+          </div>
+          <div>
+            <label for="length">Längd</label>
+            <input type="text" name="length" />
+          </div>
+          <div>
+            <label for="club">Klubbadress</label>
+            <input type="text" name="club" />
+          </div>
+          <div>
+            <label for="bestfoot">Bästa fot</label>
+            <input type="text" name="bestfoot" />
+          </div>
+
+          <div>
+            <label for="color">Dressfärg</label>
+            <select name="color">
+              <option value="pink">Rosa</option>
+              <option value="purple">Lila</option>
+              <option value="green">Grön</option>
+              <option value="gray">Grå</option>
+              <option value="red">Röd</option>
+              <option value="yellow">Gul</option>
+              <option value="black">Svart</option>
+              <option value="blue">Blå</option>
+            </select>
+          </div>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">Vill du skicka?</h1>
+                </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Stäng
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    name="submitUserForm"
+                  >
+                    Skicka
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <div>
+            <button type="reset" name="clearUserForm">Rensa</button>
+            <button
+              type="button"
+              name="submitUserForm"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Skicka
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="listContainer"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
